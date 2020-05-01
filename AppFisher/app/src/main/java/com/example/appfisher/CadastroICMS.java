@@ -17,6 +17,34 @@ public class CadastroICMS extends AppCompatActivity {
     private EditText txtAliquota;
     private Button btSalvarICMS;
 
+    private String estadoOrigem;
+    private String estadoDestino;
+    private Double aliquota;
+
+    public String getEstadoOrigem() {
+        return estadoOrigem;
+    }
+
+    public void setEstadoOrigem(String estadoOrigem) {
+        this.estadoOrigem = estadoOrigem;
+    }
+
+    public String getEstadoDestino() {
+        return estadoDestino;
+    }
+
+    public void setEstadoDestino(String estadoDestino) {
+        this.estadoDestino = estadoDestino;
+    }
+
+    public Double getAliquota() {
+        return aliquota;
+    }
+
+    public void setAliquota(Double aliquota) {
+        this.aliquota = aliquota;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +58,11 @@ public class CadastroICMS extends AppCompatActivity {
         btSalvarICMS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                CadastroICMS icms = new CadastroICMS();
+                icms.setEstadoOrigem(getEstadoOrigem());
+                icms.setEstadoDestino(getEstadoDestino());
+                icms.setAliquota(getAliquota());
+
                alertDialog = new AlertDialog.Builder(CadastroICMS.this);
 
                 String mensagem = "";
@@ -46,6 +79,7 @@ public class CadastroICMS extends AppCompatActivity {
 
             }
         });
+
 
     }
 }
