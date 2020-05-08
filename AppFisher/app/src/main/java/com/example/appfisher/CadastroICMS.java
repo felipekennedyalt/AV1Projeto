@@ -17,6 +17,7 @@ public class CadastroICMS extends AppCompatActivity {
     private EditText txtAliquota;
     private Button btSalvarICMS;
 
+
     private String estadoOrigem;
     private String estadoDestino;
     private Double aliquota;
@@ -54,6 +55,7 @@ public class CadastroICMS extends AppCompatActivity {
         txtEstadoDestino = findViewById(R.id.txtEstadoDestino);
         txtAliquota = findViewById(R.id.txtAliquota);
         btSalvarICMS = findViewById(R.id.btSalvarICMS);
+
 
         btSalvarICMS.setOnClickListener(new View.OnClickListener() {
             @Override

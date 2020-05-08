@@ -14,7 +14,7 @@ public class MenuPrincipal extends AppCompatActivity {
     private TextView txtLoginMenu;
     private TextView txtSenhaMenu;
     private Button btICMS;
-
+    private Button btPedido;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class MenuPrincipal extends AppCompatActivity {
         txtLoginMenu = findViewById(R.id.txtLoginMenu);
         txtSenhaMenu = findViewById(R.id.txtSenhaMenu);
         btICMS = findViewById(R.id.btICMS);
+        btPedido = findViewById(R.id.btPedido);
 
         Bundle extras = getIntent().getExtras();
 
@@ -43,5 +44,13 @@ public class MenuPrincipal extends AppCompatActivity {
             }
         });
 
+        btPedido.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuPrincipal.this, CadastroPedido.class);
+
+                startActivity(intent);
+            }
+        });
     }
 }
