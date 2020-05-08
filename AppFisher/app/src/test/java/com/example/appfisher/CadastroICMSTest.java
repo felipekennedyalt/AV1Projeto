@@ -12,10 +12,10 @@ import dao.ICMSDAO;
 public class CadastroICMSTest {
 
     @Test
-    public void TesteSalvarEstadoDeOrigemNoBancoDeDados(){
+    public void TesteSalvarEstadoNoBancoDeDados(){
         CadastroICMS icms = new CadastroICMS();
-        icms.setEstadoOrigem("Ceará");
-        icms.setEstadoDestino("Pernambuco");
+        icms.setEstado("Ceará");
+
         icms.setAliquota(18.0);
 
         ICMSDAO dao = new ICMSDAO();
@@ -26,8 +26,7 @@ public class CadastroICMSTest {
     @Test
     public void DeveriaSalvarIMCSMock(){
         CadastroICMS icms = new CadastroICMS();
-        icms.setEstadoOrigem("Ceará");
-        icms.setEstadoDestino("Pernambuco");
+        icms.setEstado("Ceará");
         icms.setAliquota(18.0);
 
         ICMSDAO daoFalso = Mockito.mock(ICMSDAO.class);

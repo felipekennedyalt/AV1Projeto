@@ -6,7 +6,7 @@ import com.example.appfisher.CadastroICMS;
 public class ICMSDAO {
 
     public boolean save(CadastroICMS icms){
-        System.out.println("Operação realizada com sucesso! " + icms.getEstadoOrigem());
+        System.out.println("Operação realizada com sucesso! " + icms.getEstado());
         return true;
     }
 }
