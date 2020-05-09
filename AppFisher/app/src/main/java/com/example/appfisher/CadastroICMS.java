@@ -15,7 +15,13 @@ public class CadastroICMS extends Activity {
     private EditText txtAliquota;
     private Button btSalvarICMS;
 
+<<<<<<< HEAD
     private String estado;
+=======
+
+    private String estadoOrigem;
+    private String estadoDestino;
+>>>>>>> 768f034c7f1d75b88f871da21c1506ce2542b298
     private Double aliquota;
 
     public String getEstado() {
@@ -42,6 +48,7 @@ public class CadastroICMS extends Activity {
         txtEstado = findViewById(R.id.txtEstado);
         txtAliquota = findViewById(R.id.txtAliquota);
         btSalvarICMS = findViewById(R.id.btSalvarICMS);
+
 
         btSalvarICMS.setOnClickListener(new View.OnClickListener() {
             @Override

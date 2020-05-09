@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".CadastroVendas">
 
+<<<<<<< HEAD
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
@@ -123,4 +124,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/compRadioGroup" />
 
+=======
+>>>>>>> 768f034c7f1d75b88f871da21c1506ce2542b298
 </androidx.constraintlayout.widget.ConstraintLayout>

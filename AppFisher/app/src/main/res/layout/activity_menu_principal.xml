@@ -76,12 +76,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+<<<<<<< HEAD
         android:text="Cadastrar Pedido"
+=======
+        android:text="Pedido"
+>>>>>>> 768f034c7f1d75b88f871da21c1506ce2542b298
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btICMS" />
 
+<<<<<<< HEAD
     <Button
         android:id="@+id/btVenda"
         android:layout_width="wrap_content"
@@ -93,4 +98,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btPedido" />
 
+=======
+>>>>>>> 768f034c7f1d75b88f871da21c1506ce2542b298
 </androidx.constraintlayout.widget.ConstraintLayout>

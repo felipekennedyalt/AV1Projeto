@@ -1,5 +1,6 @@
 package com.example.appfisher;
 
+<<<<<<< HEAD
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -32,11 +33,19 @@ public class CadastroVendas extends Activity {
     public void setValorVenda(Double valorVenda) {
         ValorVenda = valorVenda;
     }
+=======
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class CadastroVendas extends AppCompatActivity {
+>>>>>>> 768f034c7f1d75b88f871da21c1506ce2542b298
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_vendas);
+<<<<<<< HEAD
 
 
         txtDataVenda = findViewById(R.id.txtDataVenda);
@@ -74,5 +83,7 @@ public class CadastroVendas extends Activity {
             }
         });
 
+=======
+>>>>>>> 768f034c7f1d75b88f871da21c1506ce2542b298
     }
 }

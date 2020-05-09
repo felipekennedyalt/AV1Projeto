@@ -16,7 +16,10 @@ public class MenuPrincipal extends Activity {
     private TextView txtSenhaMenu;
     private Button btICMS;
     private Button btPedido;
+<<<<<<< HEAD
     private Button btVenda;
+=======
+>>>>>>> 768f034c7f1d75b88f871da21c1506ce2542b298
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +31,10 @@ public class MenuPrincipal extends Activity {
         txtSenhaMenu = findViewById(R.id.txtSenhaMenu);
         btICMS = findViewById(R.id.btICMS);
         btPedido = findViewById(R.id.btPedido);
+<<<<<<< HEAD
         btVenda = findViewById(R.id.btVenda);
+=======
+>>>>>>> 768f034c7f1d75b88f871da21c1506ce2542b298
 
         Bundle extras = getIntent().getExtras();
 
@@ -55,6 +61,7 @@ public class MenuPrincipal extends Activity {
                 startActivity(intent);
             }
         });
+<<<<<<< HEAD
 
         btVenda.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,5 +71,7 @@ public class MenuPrincipal extends Activity {
                 startActivity(intent);
             }
         });
+=======
+>>>>>>> 768f034c7f1d75b88f871da21c1506ce2542b298
     }
 }
