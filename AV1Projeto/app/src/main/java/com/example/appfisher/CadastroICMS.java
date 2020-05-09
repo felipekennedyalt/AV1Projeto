@@ -1,6 +1,8 @@
 package com.example.appfisher;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,20 +10,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class CadastroICMS extends Activity {
+public class CadastroICMS extends AppCompatActivity {
 
     private AlertDialog.Builder alertDialog;
     private EditText txtEstado;
     private EditText txtAliquota;
     private Button btSalvarICMS;
 
-<<<<<<< HEAD
     private String estado;
-=======
-
-    private String estadoOrigem;
-    private String estadoDestino;
->>>>>>> 768f034c7f1d75b88f871da21c1506ce2542b298
     private Double aliquota;
 
     public String getEstado() {
@@ -45,6 +41,10 @@ public class CadastroICMS extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_i_c_m_s);
 
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar != null){
+            actionBar.setTitle("Cadastro ICMS");
+        }
         txtEstado = findViewById(R.id.txtEstado);
         txtAliquota = findViewById(R.id.txtAliquota);
         btSalvarICMS = findViewById(R.id.btSalvarICMS);
@@ -60,6 +60,7 @@ public class CadastroICMS extends Activity {
                 mensagem += "Estado: " + txtEstado.getText().toString();
                 mensagem += "\n Aliquota: " + txtAliquota.getText().toString();
                 mensagem += "%";
+
 
                 alertDialog.setTitle("ICMS salvo");
                 alertDialog.setPositiveButton("OK", null);

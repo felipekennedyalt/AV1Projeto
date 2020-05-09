@@ -1,5 +1,6 @@
 package com.example.appfisher;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
@@ -10,31 +11,29 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MenuPrincipal extends Activity {
+public class MenuPrincipal extends AppCompatActivity {
 
     private TextView txtLoginMenu;
     private TextView txtSenhaMenu;
     private Button btICMS;
     private Button btPedido;
-<<<<<<< HEAD
     private Button btVenda;
-=======
->>>>>>> 768f034c7f1d75b88f871da21c1506ce2542b298
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
 
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar != null){
+            actionBar.setTitle("Menu Principal");
+        }
 
         txtLoginMenu = findViewById(R.id.txtLoginMenu);
         txtSenhaMenu = findViewById(R.id.txtSenhaMenu);
         btICMS = findViewById(R.id.btICMS);
         btPedido = findViewById(R.id.btPedido);
-<<<<<<< HEAD
         btVenda = findViewById(R.id.btVenda);
-=======
->>>>>>> 768f034c7f1d75b88f871da21c1506ce2542b298
 
         Bundle extras = getIntent().getExtras();
 
@@ -61,7 +60,6 @@ public class MenuPrincipal extends Activity {
                 startActivity(intent);
             }
         });
-<<<<<<< HEAD
 
         btVenda.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,7 +69,7 @@ public class MenuPrincipal extends Activity {
                 startActivity(intent);
             }
         });
-=======
->>>>>>> 768f034c7f1d75b88f871da21c1506ce2542b298
     }
+
+
 }
